@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+  <title>DropDown Menu</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="icon.png" class="icon"> 
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Hunger Map</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Donate Now</a></li>
+      </ul>
+      <img src="user.png" class="user" onclick="toggleMenu()">
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="user2.png">
+            <h2 class="text">USER</h2>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <img src="profile.png">
+            <a href="profile.html" target="blank"><p>Edit Profile</p>
+              <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="settings.png">
+            <p>Settings</p>
+            <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="help.png">
+            <p> Help</p>
+            <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="logout.png">
+            <p> Log Out</p>
+            <span>→</span>
+           </a>
+
+
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+<script>
+  let subMenu = document.getElementById("subMenu");
+
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+</script>
+
+</head>
+<body>
+  <header>
+  <header class= "main-header">
+    <div class="icon"></div>
+
+  </header>
+  <body>
+  <div class="background">
+    <div class="form-box">
+      <div class="login">
+        <h1 id="text" style="text-align:center" bottom: 40px;>Login </h1>
+        <div style = position:relative; top:20px;>
+          <h2 id= "sign-in" style="text-align:center;">Sign in to your account</h2>  
+      </div>
+      <div>
+       </div>
+      <form class="input-group">
+        <label for="Username">Enter Username: </label>
+        <input type="Username" id="Username" required>
+        <label for="Password">Enter Password: </label>
+        <input type="Password" id="Password" required>
+        <button type="login" class="login-btn"> <p style="color:rgb(255, 255, 255); font-weight: bold;">Log in</p></button>
+        <button type="register" class="register-btn"> <p style="color:rgb(0, 0, 0); font-weight: bold;">Register New Account</p></button>
+        <h2 id= "Password" style="text-align:center; font-size: small;right:400px; font-weight: normal;" >I forgot my password, Click here<a href="reset.html" target="blank"> here </a> to reset.</h2> 
+      </form>
+    </div>
+  </div>
+<!--   </div>
+  <div class="footer">
+    <div class="Useful-Links">
+        <a href="#">Home</a></li>
+        <a href="#">Hunger Map</a></li>
+        <a href="#">About us</a></li>
+        <a href="#">Shop</a></li>
+        <a href="#">Donate Now</a></li>
+    </div>
+    <div class="newspaper">
+      <h3>newspaper</h3>
+      <form>
+        <input type="text" placeholder="Email Address">
+        <button type="submit">Subscribe Now</button>
+      </form>
+    </div>
+    <div class="col-3"></div>
+    <h3>Contact</h3>
+    <p>London, Uk</p>
+  </div> -->
+<!-- FOOTER -->
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row mt-4 ">
+        <div class="col-md-3 col-lg-2 mx-auto mt-3 mb-4 text-left">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Food Planet</h5>
+          <p> Our goal at FoodPlanet is to raise awareness on foodpoverty and to encourage our customers to donate to aid those in food poverty.
+          </p>
+        </div>
+  
+        <div class="col-md-3 col-lg-1 mx-auto mt-3 mb-4 Links text-left ">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Links</h5>
+          <p>
+            <a href="index.html">Home</a>
+          </p>
+          <p>
+            <a href="Aboutus.html">Hunger Map</a>
+          </p>
+          <p>
+            <a href="partners.html">About Us</a>
+          </p>
+          <p>
+            <a href="resources.html">Shop</a>
+          </p>
+          <p>
+            <a href="report.html">Donate Now</a>
+          </p>
+        </div>
+  
+        <div class="col-md-3 col-lg-2 mx-auto mt-3 mb-4 text-left Contact">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Contact Us:</h5>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i>
+           07823457381
+          </p>
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:info@foodplanet.com">info@foodplanet.com</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  
+ 
+      
+  </footer>
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
+  <div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>Reset Password</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="icon.png" class="icon"> 
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Hunger Map</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Donate Now</a></li>
+      </ul>
+      <img src="user.png" class="user" onclick="toggleMenu()">
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="user2.png">
+            <h2 class="text">USER</h2>
+          </div>
+          <hr>
+          <a href="#" class="sub-menu-link">
+            <img src="profile.png">
+            <p> Edit Profile</p>
+              <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="settings.png">
+            <p>Settings</p>
+            <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="help.png">
+            <p> Help</p>
+            <span>→</span>
+           </a>
+           <a href="#" class="sub-menu-link">
+            <img src="logout.png">
+            <p> Log Out</p>
+            <span>→</span>
+           </a>
+
+
+          </a>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+<script>
+  let subMenu = document.getElementById("subMenu");
+
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+</script>
+
+<form>
+  <img src="Icon.png" alt="FoodPlanet" class="iconpic" width="250" height="200">
+  <label for="email">Enter Email/Username:</label>
+  <input type="email" id="email" required>
+  <button type="reset">Reset Password</button>
+</form>
+
+</body>
+</html>
